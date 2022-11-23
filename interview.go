@@ -1,4 +1,4 @@
-package frontend_interview
+package main
 
 import (
 	"crypto/ed25519"

@@ -1,6 +1,6 @@
 //go:build jwx_es256k
 
-package frontend_interview
+package main
 
 import (
 	"encoding/json"

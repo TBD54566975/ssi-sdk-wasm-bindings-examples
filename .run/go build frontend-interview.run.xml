@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="main.wasm" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <module name="frontend-interview" />
+    <working_directory value="$PROJECT_DIR$" />
+    <useCustomBuildTags value="true" />
+    <envs>
+      <env name="GOOS" value="js" />
+      <env name="GOARCH" value="wasm" />
+    </envs>
+    <kind value="PACKAGE" />
+    <package value="frontend-interview" />
+    <directory value="$PROJECT_DIR$" />
+    <filePath value="$PROJECT_DIR$/main.go" />
+    <output_directory value="$PROJECT_DIR$/static" />
+    <option name="run" value="false" />
+    <method v="2" />
+  </configuration>
+</component>
