@@ -37,8 +37,10 @@
     window.editor = editor;
   </script>
   <script>
+    
     const getDIDBtn = document.querySelector("#getDID");
     getDIDBtn.addEventListener("click", e => {
+      alert(sayHello());
       const did = getDID(1);
       window.editor.setValue(JSON.stringify(did, null, 4), -1);
     });
