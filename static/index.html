@@ -6,41 +6,24 @@
   <script src="wasm_exec.js"></script>
   <script>
     const go = new Go();
-    WebAssembly.instantiateStreaming(fetch("main_wasm_js"), go.importObject).then((result) => {
+    WebAssembly.instantiateStreaming(fetch("main.wasm"), go.importObject).then((result) => {
       go.run(result.instance);
     });
   </script>
-  <style media="screen">
-    #editor {
-      margin-top: 20px;
-      width: 1080px;
-      height: 960px;
-    }
-  </style>
 </head>
 
 <body>
   <div>
     <h1>WASM SSI-SDK Example</h1>
-    <button id="getDID">Get DID</button>
-    <div id="editor"></div>
+    <button id="generateKey">generateKey</button>
   </div>
   <script>
-    const editor = ace.edit("editor");
-
-    editor.setTheme("ace/theme/monokai");
-    editor.session.setMode("ace/mode/json");
-    editor.setFontSize(20);
-    editor.setReadOnly(true);
-    editor.setShowPrintMargin(false);
-
-    window.editor = editor;
-  </script>
-  <script>
-    const getDIDBtn = document.querySelector("#getDID");
-    getDIDBtn.addEventListener("click", e => {
-      const did = getDID(1);
-      window.editor.setValue(JSON.stringify(did, null, 4), -1);
+    
+    const generateKeyBtn = document.querySelector("#generateKey");
+    generateKeyBtn.addEventListener("click", e => {
+      alert(sayHello());
+      alert(generateKey("Ed25519"));      
+      console.log(makeDid());      
     });
   </script>
 </body>

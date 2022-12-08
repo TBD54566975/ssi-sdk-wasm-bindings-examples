@@ -1,6 +1,6 @@
-module frontend-interview
+module sample-app
 
-go 1.17
+go 1.19
 
 require (
 	github.com/TBD54566975/ssi-sdk v0.0.0-20220624004206-a80f5b59b034
