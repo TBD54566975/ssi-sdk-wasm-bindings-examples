@@ -1,4 +1,12 @@
+# ARCHIVED
+
+Work moved and updated to: https://github.com/TBD54566975/ssi-sdk/pull/265
+
+
 # Minimal demo of WASM bindings of ssi-sdk into javascript
+
+
+
 
 https://github.com/TBD54566975/ssi-sdk is the home of self soverign stuff at TBD, implented in golang. 
 We want to use this from the web as well, this minimal demo shows how.
